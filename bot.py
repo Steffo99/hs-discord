@@ -32,23 +32,23 @@ def create_embed(data):
     if "playerClass" in data:
         embed.add_field(name="Class", value=data["playerClass"])
         if data["playerClass"] == "Druid":
-            embed.colour = discord.Colour(85 * (255 ** 2) + 55 * 255 + 33)
+            embed.colour = discord.Colour(0x752e00)
         elif data["playerClass"] == "Hunter":
-            embed.colour = discord.Colour(38 * (255 ** 2) + 92 * 255 + 33)
+            embed.colour = discord.Colour(0x097500)
         elif data["playerClass"] == "Mage":
-            embed.colour = discord.Colour(117 * (255 ** 2) + 128 * 255 + 169)
+            embed.colour = discord.Colour(0x35b0ff)
         elif data["playerClass"] == "Paladin":
-            embed.colour = discord.Colour(203 * (255 ** 2) + 147 * 255 + 63)
+            embed.colour = discord.Colour(0xffee00)
         elif data["playerClass"] == "Priest":
-            embed.colour = discord.Colour(224 * (255 ** 2) + 229 * 255 + 232)
+            embed.colour = discord.Colour(0xe5e5e5)
         elif data["playerClass"] == "Rogue":
-            embed.colour = discord.Colour(68 * (255 ** 2) + 62 * 255 + 68)
+            embed.colour = discord.Colour(0x0f0f0f)
         elif data["playerClass"] == "Shaman":
-            embed.colour = discord.Colour(44 * (255 ** 2) + 51 * 255 + 88)
+            embed.colour = discord.Colour(0x001bba)
         elif data["playerClass"] == "Warlock":
-            embed.colour = discord.Colour(85 * (255 ** 2) + 55 * 255 + 93)
+            embed.colour = discord.Colour(0x81009b)
         elif data["playerClass"] == "Warrior":
-            embed.colour = discord.Colour(118 * (255 ** 2) + 31 * 255 + 19)
+            embed.colour = discord.Colour(0x910000)
     if "cost" in data:
         embed.add_field(name="Mana cost", value=str(data["cost"]) + " mana")
     if "attack" in data:
