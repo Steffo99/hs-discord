@@ -1,9 +1,10 @@
 import re
+import os
 import aiohttp
 import discord
 
-discord_token = ""
-mashape_token = ""
+discord_token = os.environ["discordtoken"]
+mashape_token = os.environ["mashapetoken"]
 
 d = discord.Client()
 
